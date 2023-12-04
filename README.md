@@ -3,35 +3,41 @@
 #### 介绍
 基于SpringBoot+Hibernate的失物招领平台
 
-#### 软件架构
-软件架构说明
+#### 开发环境：
 
+IIntelliJ DEA + JDK1.8 + Maven + MySQL 8+
 
-#### 安装教程
+#### 运行环境：
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+IntelliJ IDEA + JDK1.8 + + Maven + MySQL 8+ + Tomcat 9.0
 
-#### 使用说明
+数据库相关配置在lostandfound-configs （默认配置一个数据库（主数据源））
+   其他相关配置在lostandfound-web
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+   启动lostandfound-web模块即可
 
-#### 参与贡献
+#### 特别注意：
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+- 把lostandfound-web模块打成war包的时候，需要把下面的<scope>注释去掉(去掉内置tomcat)，
 
+```xml
+     <!-- tomcat 依赖包 -->
+       <dependency>
+           <groupId>org.apache.tomcat.embed</groupId>
+           <artifactId>tomcat-embed-jasper</artifactId>
+           <!--<scope>provided</scope>-->
+       </dependency>
+```
 
-#### 特技
+- 直接在IntelliJ IDEA里启动(配置工作目录为$MODULE_WORKING_DIR$)   也可选用spring-boot maven plugin 运行，
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+Maven：lostandfound-web >>> Plugins >>> spring-boot >>>  spring-boot:run or spring-boot:start / spring-boot:stop
+
+#### 项目名称：LostAndFound
+
+- 前台访问地址：http://localhost:8080/LostAndFoundindex.html
+
+- 登录账号  2013031308 2013031308
+
+- 后台访问地址：http://localhost:8080/LostAndFound/admin/
+- 登录账号  admin 12345678
