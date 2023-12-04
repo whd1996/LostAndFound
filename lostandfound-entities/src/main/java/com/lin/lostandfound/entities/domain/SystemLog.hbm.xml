@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-14 22:53:26 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.lin.lostandfound.entities.domain.SystemLog" table="systemlog" catalog="LostAndFound">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="description" type="string">
+            <column name="Description" length="65535">
+                <comment>&#195;&#232;&#202;&#246;</comment>
+            </column>
+        </property>
+        <property name="exceptionCode" type="string">
+            <column name="ExceptionCode" length="65535">
+                <comment>&#210;&#236;&#179;&#163;&#180;&#250;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="type" type="string">
+            <column name="Type" length="10">
+                <comment>&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="requestIp" type="string">
+            <column name="RequestIp" length="50">
+                <comment>&#199;&#235;&#199;&#243;IP</comment>
+            </column>
+        </property>
+        <property name="exceptionDetail" type="string">
+            <column name="ExceptionDetail" length="65535">
+                <comment>&#210;&#236;&#179;&#163;&#208;&#197;&#207;&#162;&#207;&#234;&#199;&#233;</comment>
+            </column>
+        </property>
+        <property name="method" type="string">
+            <column name="Method" length="65535">
+                <comment>&#183;&#189;&#183;&#168;</comment>
+            </column>
+        </property>
+        <property name="params" type="string">
+            <column name="Params" length="65535">
+                <comment>&#178;&#206;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="createBy" type="string">
+            <column name="CreateBy" length="65535">
+                <comment>&#180;&#180;&#189;&#168;&#200;&#203;</comment>
+            </column>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="CreateDate" length="19" not-null="true">
+                <comment>&#180;&#180;&#189;&#168;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

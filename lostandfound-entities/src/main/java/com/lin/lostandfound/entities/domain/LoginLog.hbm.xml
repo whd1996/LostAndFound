@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-13 17:35:37 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.lin.lostandfound.entities.domain.LoginLog" table="loginlog" catalog="LostAndFound">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="userName" type="string">
+            <column name="UserName" length="12" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="osname" type="string">
+            <column name="OSName" length="30">
+                <comment>&#178;&#217;&#215;&#247;&#207;&#181;&#205;&#179;</comment>
+            </column>
+        </property>
+        <property name="browserName" type="string">
+            <column name="BrowserName" length="30">
+                <comment>&#228;&#175;&#192;&#192;&#198;&#247;</comment>
+            </column>
+        </property>
+        <property name="loginIp" type="string">
+            <column name="LoginIp" length="30" not-null="true">
+                <comment>&#181;&#199;&#194;&#188;IP</comment>
+            </column>
+        </property>
+        <property name="loginTime" type="timestamp">
+            <column name="LoginTime" length="19" not-null="true">
+                <comment>&#181;&#199;&#194;&#188;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="uid" type="long">
+            <column name="UID" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;&#177;&#237; ID &#205;&#226;&#188;&#252;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

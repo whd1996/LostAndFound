@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-20 10:53:04 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.lin.lostandfound.entities.domain.ExpressThanks" table="expressthanks" catalog="LostAndFound">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="title" type="string">
+            <column name="Title" length="30" not-null="true">
+                <comment>&#184;&#208;&#208;&#187;&#177;&#234;&#204;&#226;</comment>
+            </column>
+        </property>
+        <property name="substance" type="string">
+            <column name="Substance" length="65535" not-null="true">
+                <comment>&#184;&#208;&#208;&#187;&#196;&#218;&#200;&#221;</comment>
+            </column>
+        </property>
+        <property name="status" type="int">
+            <column name="Status" not-null="true">
+                <comment>&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="userName" type="string">
+            <column name="UserName" length="20" not-null="true">
+                <comment>&#184;&#208;&#208;&#187;&#200;&#203;</comment>
+            </column>
+        </property>
+        <property name="leaveTime" type="timestamp">
+            <column name="LeaveTime" length="19" not-null="true">
+                <comment>&#184;&#208;&#208;&#187;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*
+ *   2017 04 08 
+ *   style of the index
+ *   last modified 2017 04 10 14:41 
+*/
+
+html{padding-top:20px;}
+header{width:100%;height:250px;*background:url(../images/bg_header.jpg) no-repeat center #a1d6f5;}
+.leftbox{width:50%;height:220px;}
+.rightbox{width:50%;*width:49.5%;}
+nav{width:99.5%;margin:0 auto;height:40px;box-shadow: 1px 1px 7px #999;z-index:99;overflow:hidden;}
+.login_win #Lcn{font-size:12px;color:#aaa;position:relative;left:10px;top:5px;white-space:nowrap;}
+.login_win #Lcp{font-size:12px;color:#aaa;position:absolute;left:351px;top:130px;white-space:nowrap;}
+h5{font-size:14px;font-weight:bold;margin-bottom:8px;height:30px;margin-top:-20px;}
+p{font-size:11px;color:#666;margin:5px;padding-bottom:10px;} /* 老bad code 影响帖子列表的p...产生依赖 */
+.left{width:60.5%;letter-spacing:0;text-align:left;border-radius:5px;background:whiteSmoke;}
+.news{font-size:16px;}
+.tab-content li:hover{background:#eee;}
+.tab-pane li{line-height:2.2em;border-bottom:1px dashed #aaa;*line-height:33px;}
+.tab-pane i{float:left;padding-right:5px;}
+.pic{margin-left:5px;margin-top:5px;} /* 宣传照相关 */
+.pic a{height:100px;display:inline-block;padding-left:15px;padding-top:10px;}
+.right{width:38%;margin-left:1%;letter-spacing:normal;}
+.up{width:98%;height:auto;border:1px solid #aaa;border-radius:5px;}
+.up pre{font-size:14px;font-family:"微软雅黑";margin:5px;}
+.shi{width:48%;text-align:center;margin-bottom:10px;}
+.xun{width:48%;text-align:center;margin-bottom:10px;}
+.bottom{width:98%;height:auto;border:1px solid #aaa;border-radius:5px;}
+.hr{display:block;height:2px;background-color:#FFFFCC;margin-top:30px;}
+.listthings{width:80%;}
+.footer{margin:0 auto;}
+footer{height:120px;font-size:14px;letter-spacing:0;padding:20px;text-align:left;}
+footer a:hover{text-decoration:underline;}
+/* 兼容ie6 ul inline */
+footer .inline li{_float:left;_margin-left:10px;}
+/**** media query *****/
+
+/* 通用媒介 原来有 1% margin 现在定值 抵消 */
+@media screen and (min-width:220px) and (max-width:960px){
+	body{/* -webkit-overflow-scrolling:touch; */}
+	.leftbox{height:50%;} 
+	.rightbox{height:48%;} 
+	nav{position:fixed;top:0;}
+	.right{margin-left:-1px;} 
+	.up {margin-top:10px;}
+	.listthings{width:100%;}
+	.footer{margin-top:50px;}
+}
+
+/* 大屏 宣传照上去 */
+@media all and (min-width:500px) and (max-width:960px){
+	.news{width:59%;display:inline-block;}
+	figure{margin-top:10px;width:25%;}
+	.pic a{margin-top:20%;}
+	.up{width:99%;}
+	.listthings{width:100%;}
+}
+
+/* 小屏首页去掉 */
+@media screen and (min-width:220px) and (max-width:499px){
+	.tab-pane li p{height:10px;width:70%;} /*太大了 改小点*/
+	#index{display:none;}
+	.listthings{width:100%;}
+}
+
+/* 局部调整样式 */
+@media all and (min-width:960px){
+	.news{width:100%;}
+	figure{width:100%;margin-top:-20px;}
+	.listthings{width:80%;}
+}
+@media all and (max-width:500px){
+	.news{width:100%;}isAnnotationPresent
+	figure{width:100%;}
+	.listthings{width:100%;}
+}
+
+@media screen and (min-width:500px){.tab-pane li p{height:10px;}} /*大屏一行显示信息 必须单写在这里 ？？？*/
+@media screen and (min-width:1500px){ #main {max-width:1200px;}}
+@media screen and (min-width:1401px){ header{background:url(../images/bg_header1680.jpg) no-repeat center;}}
+@media screen and (max-width:1400px){ header{background:url(../images/bg_header.jpg) no-repeat center #a1d6f5;}}

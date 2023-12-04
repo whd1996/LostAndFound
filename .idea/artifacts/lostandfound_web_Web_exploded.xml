@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lostandfound-web:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/lostandfound_web_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="lostandfound-web/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lostandfound-web" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+ *   2016 12 05 
+ 
+ *   lostandfound_layoutframe_v0.1.1
+ 
+ *   just for fast layout 
+     including container tools auxiliary and *respond area ( based on inline-block and media query )
+ 
+ *   last modified 2016 12 08 
+*/
+.container960{max-width:960px;margin:0 auto;text-align:justify;}
+.container100{width:100%;margin:0 auto;text-align:justify;}
+.child_join{font-size:0;letter-spacing:-4px;}
+.area{display:inline-block;text-align:center;vertical-align:top;overflow:hidden;}
+a{color:#666;text-decoration:none;}
+.border1{border:1px solid #aaa;}
+.oflow{overflow:hidden;}
+.block_center{margin:0 auto;}
+.gap5{height:5px;overflow:hidden;clear:both;}
+.gap10{height:10px;overflow:hidden;clear:both;}
+.gap20{height:20px;overflow:hidden;clear:both;}
+.gap30{height:30px;overflow:hidden;clear:both;}
+.gap50{height:50px;overflow:hidden;clear:both;}
+.block{display:block;}
+.inline{display:inline;}
+.sr_hidden{display:none;}
+.moblie_show{display:none;}
+@media all and (max-width:960px){
+	.area_block{width:100%;*width:auto;}
+	.area_inline{width:auto;}
+	.sr_hidden{display:block;}
+	.sr_only{display:none;}
+	.moblie_show{position:absolute;top:15%;display:block;}
+}
+::-webkit-scrollbar{width:12px;}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}
+::-webkit-scrollbar-thumb{-webkit-border-radius:10px;border-radius:10px;background:#99CCFF;-webkit-box-shadow:inset
+0 0 6px rgba(0,0,0,0.5);}
+::-webkit-scrollbar-thumb:window-inactive{background:rgba(255,0,0,0.4);}

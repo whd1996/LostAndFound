@@ -1,0 +1,73 @@
+@CHARSET "UTF-8";
+
+.chatwindow {
+	position: fixed; 
+	width: 600px; 
+	height: 480px; 
+	overflow: hidden; 
+	z-index: 10089; 
+	cursor: move;
+	display: none;
+	background-color:white;
+	border:1px solid green;
+}
+.window_title {
+	font-family:Arial;
+	font-weight:bold;
+	font-size:16px;
+	overflow:hidden;
+	position:absolute;
+	top:7px;
+	left:10px;
+	width:530px;
+	height:20px;color:#fff;
+	text-indent:30px;
+	background:url(../../images/onlinechat/minchat_ns_1.png) -79px 0 no-repeat;
+}
+
+
+.chat_icon_min{
+	position:absolute; 
+	top:10px; 
+	right:46px; 
+	width:12px; 
+	height:12px; 
+	cursor:pointer;
+	background:url(../../images/onlinechat/min.png?13) no-repeat;
+}
+
+.chat_icon_maxto{
+	position:absolute;
+	top:10px;
+	right:28px;
+	width:12px;
+	height:12px;
+	background:url(../../images/onlinechat/maxto.gif) no-repeat; cursor:pointer;
+}
+
+.chat_icon_minchat_ns{
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:12px;
+	height:12px;
+	background:url(../../images/onlinechat/minchat_ns_1.png) -18px 0 no-repeat;cursor:pointer;
+}
+
+.mini_header_bg_div{
+	position:static;
+	width:100%;
+	height:35px;
+	overflow:visible;
+	background:url(../../images/onlinechat/header_bg_600.png?111) no-repeat;
+}
+
+.send_msg{
+	background:url(../../images/onlinechat/minchat_ns_1.png) -79px 0px no-repeat;
+}
+
+
+<!-- show-message.jsp -->
+
+
+

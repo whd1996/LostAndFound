@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-12-5 10:18:19 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.lin.lostandfound.entities.domain.MenuItem" table="menuitem" catalog="LostAndFound">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+         <property name="menuId" type="string">
+            <column name="MenuID" length="20" not-null="true" />
+        </property>
+        <property name="menuItemName" type="string">
+            <column name="MenuItemName" length="20" not-null="true" />
+        </property>
+        <property name="menuItemUrl" type="string">
+            <column name="MenuItemUrl" length="30" />
+        </property>
+        <property name="parentId" type="string">
+            <column name="ParentId" />
+        </property>
+        <property name="status" type="int">
+            <column name="Status" not-null="true" />
+        </property>
+        <property name="menuItemDes" type="string">
+            <column name="MenuItemDes" length="30" />
+        </property>
+         <property name="authority" type="int">
+            <column name="Authority" not-null="true" />
+        </property>
+        <property name="sort" type="java.lang.Integer">
+            <column name="Sort" length="11" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-12-5 10:18:19 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.lin.lostandfound.entities.domain.User" table="user" catalog="LostAndFound">
+         <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="userName" type="string">
+            <column name="UserName" length="20" not-null="true" unique="true">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="50" not-null="true">
+                <comment>&#195;&#220;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="grade" type="string">
+            <column name="Grade" length="10" not-null="true">
+                <comment>&#196;&#234;&#188;&#182;</comment>
+            </column>
+        </property>
+        <property name="name" type="string">
+            <column name="Name" length="20">
+                <comment>&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="nickName" type="string">
+            <column name="NickName" length="10">
+                <comment>&#234;&#199;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="telPhone" type="string">
+            <column name="TelPhone" length="12" not-null="true">
+                <comment>&#193;&#170;&#207;&#181;&#181;&#231;&#187;&#176;</comment>
+            </column>
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="30">
+                <comment>&#211;&#202;&#207;&#228;</comment>
+            </column>
+        </property>
+        <property name="qq" type="string">
+            <column name="QQ" length="15">
+                <comment>qq</comment>
+            </column>
+        </property>
+        <property name="state" type="int">
+            <column name="State" not-null="true">
+                <comment>&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="createTime" type="date">
+            <column name="CreateTime" length="10" not-null="true">
+                <comment>&#180;&#180;&#189;&#168;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="isNew" type="int">
+            <column name="IsNew" not-null="true">
+                <comment>&#212;&#173;&#202;&#188;&#195;&#220;&#194;&#235;&#163;&#168;0&#163;&#169; &#208;&#222;&#184;&#196;&#186;&#243;&#163;&#168;1&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="lastLoginTime" type="timestamp">
+            <column name="LastLoginTime" length="19">
+                <comment>&#215;&#238;&#186;&#243;&#210;&#187;&#180;&#206;&#181;&#199;&#194;&#188;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
